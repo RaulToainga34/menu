@@ -1,0 +1,67 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+/* Contenedor */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Cuadrados (tarjetas) */
+.cuadrados {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    width: 260px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.cuadrados:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 25px cyan;
+}
+
+/* Links tipo botón */
+a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 15px;
+    background: cyan;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+}
